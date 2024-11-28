@@ -1,0 +1,117 @@
+html{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    display: inline;
+}
+
+p{
+    margin: 10px 0;
+}
+
+
+h1{
+    color: black;
+    font-weight: bold;
+    margin: 23px 0px 0px 10px;
+}
+
+.valor{
+    color: white;
+    font-weight: bold;
+}
+
+.valor-R{
+    color: #febe01;
+    font-weight: bold;
+}
+
+.marca, .ano-escrito, .motor, .cambio, .kms{
+    color: #b2b2b2;
+    display: inline;
+    padding: 0px;
+}
+
+.nome, .ano-numero, .motor-num, .cambio-tipo, .kms-numero{
+    color: #febe01;
+    display: inline-block;
+    padding: 0;
+}
+
+.proposta{
+    border: 1px solid #febe01;
+    background: #febe01;
+    color: #332200;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
+    grid-template-rows: 230px 230px 230px ;
+    gap: 10px;
+    place-items: center;
+    justify-content: center;
+}
+
+.item{
+    background: black;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    width: 550px;
+    justify-content: center;
+}
+
+#icon{
+    width: 80px;
+    border-radius: 100px;
+}
+
+.img_icon{
+    margin-bottom: 20px;
+}
+
+.img-item{
+    width: 300px;
+    justify-content: center;
+}
+
+.imagem{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    margin-left: 180px;
+}
+
+.navbar-items{
+    padding: 30px;
+    padding-left: 400px;
+    padding-right: 50px;
+}
+
+.navbar-item{
+    text-decoration: none;
+    padding-right: 80px;
+    background: rgb(164, 175, 0);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+
