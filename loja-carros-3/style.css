@@ -1,0 +1,232 @@
+html {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    margin: 23px 0 0 10px;
+}
+
+h2 {
+    display: inline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.title-img{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .img_icon img {
+    border: solid 5px rgb(164, 175, 0);
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 150px;
+}
+
+.navbar .titulo {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 260px;
+    margin-left: 10px;
+}
+
+.navbar .navbar-items {
+    display: flex;
+    padding: 0 50px;
+    margin-right: 95px;
+}
+
+.navbar .navbar-item {
+    text-decoration: none;
+    padding: 10px 30px;
+    background: rgb(164, 175, 0);
+    border-radius: 8px;
+    color: white;
+    margin-left: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.item {
+    background: black;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.img-item{
+    width: 300px;
+}
+
+.img-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.desc{
+    margin-left: 20px;
+}
+
+
+.valor, .valor-R, .marca, .nome, .ano-escrito, .motor, .cambio, .kms, .ano-numero, .motor-num, .cambio-tipo, .kms-numero {
+    margin: 10px 0;
+}
+
+.valor {
+    color: white;
+    font-weight: bold;
+}
+
+.valor-R {
+    color: #febe01;
+    font-weight: bold;
+}
+
+.marca, .ano-escrito, .motor-tipo, .cambio, .kms {
+    color: #b2b2b2;
+}
+
+.nome, .ano-numero, .motor-num, .cambio-tipo, .kms-numero {
+    color: #febe01;
+}
+
+.kms{
+    margin-bottom: 20px;
+}
+
+/* Estilo do Botão Proposta */
+.proposta {
+    border: 1px solid #febe01;
+    background: #febe01;
+    color: #332200;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.proposta:hover {
+    background-color: #ffd700;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 5px;
+    }
+    .navbar .img_icon img{
+        margin-left: 50px;
+    }
+
+    .navbar .img_icon{
+        width: 200px;
+    }
+
+    .title-img{
+        width: 170px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .titulo{
+        margin-right: 100px;
+        width: auto;
+        margin-left: 8px;
+    }
+
+    .navbar .navbar-items{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 8px;
+        margin-right: 70px;
+        padding: 0px;
+    }
+
+    .navbar .navbar-item{
+        padding: 15px;
+        text-align: center;
+        align-content: center;
+    }
+    
+    .item{
+        width: 250px;
+        flex-direction: column;
+    }
+
+    .item .img-item{
+        width: 100%;
+    }
+
+    .container{
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 320px)  {
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .title-img{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+    }
+
+    .navbar .titulo{
+        margin-right: 100px;
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .navbar .navbar-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-right: 15px;
+        padding: 0px;
+    }
+    .container{
+        grid-template-columns: 2fr;
+        margin: 0px;
+    }
+}
